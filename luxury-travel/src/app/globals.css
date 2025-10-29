@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-midnight text-ivory antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-[var(--font-serif)] tracking-wide text-ivory;
+  }
+}
+
+::selection {
+  background: rgba(201, 166, 70, 0.65);
+  color: #0b1a2e;
+}
